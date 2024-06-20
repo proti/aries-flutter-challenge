@@ -1,0 +1,63 @@
+section {
+    padding: 1px 1px 1px 1px;
+    background-color: #9CAFAA;
+    border-radius: 10px;
+    font-weight: 500;
+
+    #graph {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .maxProfit {
+        color: green;
+        padding-right: 30px;
+
+    }
+
+    .maxProfit.loss {
+        color: red;
+    }
+
+    .maxLoss {
+        color: red;
+    }
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #cecece;
+    text-align: left;
+    padding: 0 5px;
+    max-width: 150px;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+#tooltip:before {
+    position: absolute;
+    top: 47px;
+    left: 22px;
+    display: block;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #cecece;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.tooltip-price>span:first-child {
+    text-decoration: underline;
+}
+
+.tooltip-payoff>span:first-child {
+    text-decoration: underline;
+}
